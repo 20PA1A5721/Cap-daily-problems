@@ -1,0 +1,8 @@
+Collections.sort(a);
+     int n = a.size();
+     int result =0;
+     for( int i=0;i<n;i++){
+         result = result ^ a.get(i);
+     }
+     return result;
+    }
