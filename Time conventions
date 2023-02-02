@@ -1,0 +1,28 @@
+String ds;
+     char la = s.charAt(s.length() -2);
+     String se = s.substring(0,s.length() -2);
+     if( la == 'A')
+     {
+         int fd = Integer.parseInt(s.substring(0,2));
+         if( fd == 12){
+             fd = 00;
+         }
+         String st = Integer.toString(fd);
+         if( st.length() == 1){
+             st = '0' + st;
+         }
+        ds  = st + s.substring(2,s.length()-2);
+       
+     }
+     
+     else{
+         int fr =Integer.parseInt(s.substring(0,2));
+         if(fr != 12 ){
+             fr = fr+12;    
+         }
+         String st = Integer.toString(fr);
+         if( st.length() == 1){
+         st = "0"+st;}
+         ds = st + s.substring(2,s.length()-2);
+     }
+      return(ds);
