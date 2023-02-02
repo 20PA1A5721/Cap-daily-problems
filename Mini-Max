@@ -1,0 +1,11 @@
+long sum = 0,hd =0;
+        for( int  i= 0;i<arr.size() -1;i++){
+            
+            sum = sum+arr.get(i);
+        }
+         for( int  i= 1;i<arr.size() ;i++){
+            
+            hd= hd+arr.get(i);
+        }
+        System.out.print(sum+" "+hd);
+        
