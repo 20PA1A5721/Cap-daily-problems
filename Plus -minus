@@ -1,0 +1,17 @@
+double pos =0,neg=0,equl=0;
+    int n = arr.size();
+    for( int i =0 ;i<n ;i++){
+        if(arr.get(i) > 0 ){
+            pos++;
+        }
+         else if(arr.get(i) < 0 ){
+            neg++;
+        }
+         else{
+            equl++;
+        }
+    }
+    System.out.println(pos/n );
+    System.out.println(neg/n );
+    System.out.println(equl/n );
+    }
