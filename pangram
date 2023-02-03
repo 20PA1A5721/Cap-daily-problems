@@ -1,0 +1,15 @@
+String gf = s.toLowerCase();
+     HashSet<Character> dd = new HashSet();
+     for(int i =0;i<gf.length();i++ ){
+         char ch = gf.charAt(i);
+         if( Character.isLetter(ch)){
+             dd.add(ch);
+         }
+     }
+         if( dd.size() == 26){
+             return ("pangram");
+             
+         }
+     else{
+         return ("not pangram");
+     }
